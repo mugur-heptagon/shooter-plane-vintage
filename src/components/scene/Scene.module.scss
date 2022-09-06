@@ -1,0 +1,29 @@
+@import "styles/shared.scss";
+
+.gameBoard {
+  height: 100vh;
+  width: min(100vw, 800px);
+  overflow: hidden;
+  background-image: url("../../assets/ocean.jpg");
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: cover;
+  border: 10px solid $transparent-black-03;
+  box-sizing: border-box;
+}
+
+.movingBackground {
+  animation-name: MOVE_BG;
+  animation-duration: 300s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes MOVE_BG {
+  from {
+    background-position: center center;
+  }
+  to {
+    background-position: center 2376px;
+  }
+}

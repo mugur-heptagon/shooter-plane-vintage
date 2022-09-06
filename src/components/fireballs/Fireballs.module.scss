@@ -1,0 +1,9 @@
+@import "styles/shared.scss";
+
+.fire {
+  width: 5px;
+  height: 15px;
+  position: absolute;
+  background: $fireball-background;
+  border-radius: 50%;
+}

@@ -1,0 +1,17 @@
+@import "styles/shared.scss";
+@import "components/info/info.shared.scss";
+
+.scoreBoard {
+  @extend .boxBackground;
+  right: 117px;
+  bottom: 11px;
+
+  & > span {
+    @extend .infoSpan;
+  }
+
+  &::after {
+    @extend .infoSpan-postfix;
+    content: "pts";
+  }
+}

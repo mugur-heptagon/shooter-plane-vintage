@@ -1,0 +1,21 @@
+@import "styles/shared.scss";
+
+.boxBackground {
+  font-family: $primary-font;
+  position: fixed;
+  padding: 10px;
+  background-color: $transparent-black-03;
+  min-width: 85px;
+}
+
+.infoSpan {
+  font-family: $secondary-font;
+  font-size: large;
+  color: $info-digit-color;
+}
+
+.infoSpan-postfix {
+  color: $white;
+  font-size: x-small;
+  margin-left: 5px;
+}
